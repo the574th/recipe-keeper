@@ -112,7 +112,8 @@ app.get('/recipes/:id', (req, res) => {
         console.log(recipe);
 
         if (obj.idList.includes(parseInt(req.params.id))) {
-            res.send(recipe);
+            // res.send(recipe);
+            res.render('eachRecipe', recipe)
             } else {
             res.status(404);
             res.send("id not found");

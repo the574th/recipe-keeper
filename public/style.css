@@ -1,5 +1,5 @@
-h1 {
-  color: red;
+body {
+  padding: 10px 20px 10px 60px;
 }
 
 /* Important styles */
@@ -7,7 +7,8 @@ h1 {
   display: block;
   width: 28px;
   height: 30px;
-  margin: 30px auto 10px;
+  margin: 30px 10px;
+  float: right;
 }
 
 #toggle span:after,
@@ -57,9 +58,11 @@ h1 {
   color: #999;
   width: 200px;
   padding: 10px;
-  margin: auto;
+  margin: 55px 0px;
+  float: right;
+  left: 35px;
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  text-align: center;
+  text-align: right;
   border-radius: 4px;
   background: white;
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
@@ -67,6 +70,7 @@ h1 {
   opacity: 0;
   visibility: hidden;
   transition: opacity .4s;
+  z-index: 2;
 }
 #menu:after {
   position: absolute;
@@ -94,9 +98,34 @@ li a:hover,
 li a:focus {
   background: #1ABC9C;
   color: #fff;
+  text-decoration: none;
 }
 
 
 /* demo styles */
 body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
 p, p a { font-size: 12px;text-align: center; color: #888; }
+
+
+.indieRecipe {
+  margin: 30px 30px 30px 0;
+}
+
+img.recipePhoto {
+  width: 50%;
+  position: relative;
+  float: right;
+  top: -200px;
+  right: 50px;
+}
+
+h3 {
+  border-bottom: 1px solid grey;
+  line-height: 20px;
+  font-size: 10px;
+  color: grey;
+}
+
+section {
+  width: 40%;
+}

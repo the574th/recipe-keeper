@@ -4,7 +4,7 @@ class SideMenu extends React.Component {
     render() {
 
         return (
-          <h1>hi</h1>
+          <h1>Side Menu</h1>
 
         )
     }
